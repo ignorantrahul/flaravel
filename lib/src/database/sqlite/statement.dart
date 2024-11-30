@@ -149,6 +149,38 @@ class SQLiteStatement {
     }
   }
 
+  /// Bind a value to a parameter
+  void bind(int index, dynamic value) {
+    if (_finalized) {
+      throw StateError('Statement has been finalized');
+    }
+
+    if (_stmt == null) {
+      throw StateError('Statement not initialized');
+    }
+
+    if (kDebugMode) {
+      print('Binding parameter $index: $value (${value.runtimeType})');
+    }
+
+    switch (value) {
+      case int value:
+        _sqlite.bindInt(_stmt!, index, value);
+      case double value:
+        _sqlite.bindDouble(_stmt!, index, value);
+      case String value:
+        _sqlite.bindText(_stmt!, index, value);
+      case List<int> value:
+        _sqlite.bindBlob(_stmt!, index, value);
+      case null:
+        _sqlite.bindNull(_stmt!, index);
+      default:
+        throw ArgumentError(
+          'Unsupported parameter type: ${value.runtimeType}',
+        );
+    }
+  }
+
   /// Finalize the statement
   void finalize() {
     if (_finalized) return;
