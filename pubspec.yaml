@@ -1,7 +1,7 @@
 name: flaravel
-description: "A new Flutter package project."
+description: "A powerful Laravel-inspired framework for Flutter, combining Laravel's elegant architecture with Flutter's reactive UI"
 version: 0.0.1
-homepage:
+homepage: https://github.com/ignorantrahul/flaravel 
 
 environment:
   sdk: ^3.5.4
@@ -10,11 +10,17 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  get: ^5.0.0-release-candidate
+  get_storage: ^2.1.1
+  meta: ^1.9.1
+  collection: ^1.17.1
+  crypto: ^3.0.3
+  path: ^1.8.3
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^4.0.0
+  flutter_lints: ^5.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

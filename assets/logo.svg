@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Large Flutter logo in background -->
+    <g transform="translate(0, 0) scale(1.0)">
+        <!-- Left triangle -->
+        <path d="M256 20
+                 L492 256
+                 L256 492
+                 L130 366
+                 L256 240
+                 L130 114
+                 Z" 
+              fill="#02569B"/>
+        
+        <!-- Right triangle -->
+        <path d="M256 240
+                 L130 366
+                 L256 492
+                 L492 256
+                 Z" 
+              fill="#45D1FD"/>
+    </g>
+    
+    <!-- Bold L filled with deep saffron -->
+    <path d="M120 80
+             L120 400
+             L400 400
+             L400 340
+             L200 340
+             L200 80
+             Z"
+          fill="#FF4500"
+          stroke="#FF4500"
+          stroke-width="4"/>
+          
+    <!-- L inner highlight -->
+    <path d="M120 80
+             L120 400
+             L400 400
+             L400 340
+             L200 340
+             L200 80
+             Z"
+          stroke="white"
+          stroke-width="2"
+          stroke-opacity="0.3"
+          fill="none"/>
+</svg>
