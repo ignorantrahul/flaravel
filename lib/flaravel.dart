@@ -4,6 +4,7 @@ export 'src/foundation/provider.dart';
 
 // Database
 export 'src/database/model/model.dart';
+export 'src/database/query/builder.dart';
 
 /// A Calculator.
 class Calculator {
